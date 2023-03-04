@@ -1,0 +1,44 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(144 175 212);
+    height: 100vh;
+}
+
+.login__panel {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 60px;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+.login__panel_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__panel_form > input {
+    border: none;
+    border-bottom: 1px solid rgb(175 175 175);
+    height: 30px;
+}
+
+.login__panel_form > input:focus {
+    outline-bottom: 1px solid rgb(140 140 140);
+}
+
+.login__panel_form > button {
+    cursor: pointer;
+}
+
+.login__panel_button {
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(144 175 212);
+}
