@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Register.css'
 import {Link, useNavigate} from 'react-router-dom'
 import {createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
