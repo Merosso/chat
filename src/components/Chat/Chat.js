@@ -6,11 +6,12 @@ import {useAppSelector} from '../../hook.ts'
 
 const Chat = () => {
 
+    const user = useAppSelector(state => {return state.chat.user})
 
     return(
         <div className={'chat'}>
             <div className={'chat__info'}>
-                <span>{}</span>
+                <span>{user.displayName}</span>
             </div>
             <Messages/>
             <Input/>
