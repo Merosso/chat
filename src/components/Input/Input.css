@@ -1,0 +1,37 @@
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    background-color: white;
+}
+
+.input > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+    color: #2f2d52;
+}
+
+.input__send {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input__send > img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.input__send > button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    color: white;
+    background-color: #8da4f1;
+}

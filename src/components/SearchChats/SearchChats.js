@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './SearchChats.css'
+import {doc, onSnapshot} from 'firebase/firestore'
+import {auth, db} from '../../firebase'
+import {sendUser} from '../../redux/chatSlice.ts'
 import {useAppDispatch, useAppSelector} from '../../hook.ts'
 
 const SearchChats = () => {

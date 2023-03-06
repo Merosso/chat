@@ -1,8 +1,8 @@
 import {useEffect} from "react";
 import {onAuthStateChanged} from "firebase/auth";
-import {useAppDispatch} from "../../hook.ts";
-import {auth} from "../../firebase";
-import {addCurrentUser} from "../../redux/authSlice.ts";
+import {useAppDispatch} from "../hook.ts";
+import {auth} from "../firebase";
+import {addCurrentUser} from "../redux/authSlice.ts";
 import {useLocation, Navigate} from "react-router-dom";
 
 export const PrivateRoute = ({children}) => {
