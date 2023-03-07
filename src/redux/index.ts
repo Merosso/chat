@@ -1,4 +1,6 @@
-import {configureStore} from "@reduxjs/toolkit";
+import {configureStore} from '@reduxjs/toolkit'
+import authReducer from './authSlice.ts'
+import chatReducer from './chatSlice.ts'
 
 export const store = configureStore({
     reducer: {

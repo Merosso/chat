@@ -11,16 +11,23 @@ function App() {
     return (
         <Routes>
             <Route path={'/'}>
-                <PrivateRoute>
-                    <Route index element={<Home/>}/>
-                </PrivateRoute>
-                <PrivateAuth>
-                    <Route path={'/signup'} element={<Register/>}/>
-                </PrivateAuth>
-                <PrivateAuth>
-                    <Route path={'/login'} element={<Login/>}/>
-                </PrivateAuth>
+                <Route index element={
+                    <PrivateRoute>
+                        <Home/>
+                    </PrivateRoute>
+                }/>
+                <Route path={'/signup'} element={
+                    <PrivateAuth>
+                        <Register/>
+                    </PrivateAuth>
+                }/>
+                <Route path={'/login'} element={
+                    <PrivateAuth>
+                        <Login/>
+                    </PrivateAuth>
+                }/>
             </Route>
+
         </Routes>
     )
 }

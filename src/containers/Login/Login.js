@@ -29,12 +29,13 @@ const Login = () => {
         <div className={'login'}>
             <div className={'login__panel'}>
                 <span className={'login__panel_logo'}>Chat</span>
-                <span className={'login__panel_description'} onSubmit={loginUser}>Login</span>
-                <form className={'login__panel_form'}>
+                <span className={'login__panel_description'}>Login</span>
+                <form className={'login__panel_form'} onSubmit={loginUser}>
                     <input type={'email'} name={'email'} placeholder={'Email'}/>
                     <input type={'password'} name={'password'} placeholder={'Password'}/>
                     <button className={'login__panel_button'}>Login</button>
                 </form>
+                {err && <p>Something went wrong</p>}
                 <span>You don't have an account? <Link to={'/signup'}>Register</Link></span>
             </div>
         </div>

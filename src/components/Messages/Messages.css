@@ -1,0 +1,7 @@
+.messages {
+    height: calc(100% - 160px);
+    padding: 10px;
+    overflow: scroll;
+
+    background-color: #ddddf7;
+}

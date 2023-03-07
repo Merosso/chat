@@ -55,6 +55,7 @@
 }
 
 .sidebar__header_logout:hover {
+    cursor: pointer;
     transition: .3s ease-in-out;
     background-color: #4b4576;
 }
